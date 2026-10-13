@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> RN Ads </title>
+
+<meta name="description" content="Join our Telegram channel for live cricket predictions and match tips.">
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','YOUR_PIXEL_ID');
+fbq('track','PageView');
+
+function joinTG(){
+fbq('track','Lead');
+window.location.href="https://t.me/+zkyyxbjSakUxYjQ1";
+}
+</script>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(180deg,#081a33,#020c1c);
+color:white;
+text-align:center;
+}
+
+.container{
+padding:25px;
+}
+
+.logo img{
+width:110px;
+height:110px;
+border-radius:100px;
+border:4px solid #00ffc3;
+}
+
+h1{
+margin-top:15px;
+font-size:30px;
+}
+
+.subtitle{
+color:#ddd;
+font-size:18px;
+}
+
+.join-btn{
+margin-top:25px;
+padding:16px 35px;
+font-size:20px;
+background:#229ED9;
+border:none;
+border-radius:8px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+.stats{
+margin-top:35px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.card{
+background:#11284b;
+padding:20px;
+border-radius:10px;
+width:150px;
+}
+
+.counter{
+font-size:28px;
+color:#00ffc3;
+margin-top:10px;
+}
+
+.timer{
+margin-top:25px;
+font-size:20px;
+color:#ffcc00;
+}
+
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+display:none;
+align-items:center;
+justify-content:center;
+}
+
+.popup-box{
+background:#0e2242;
+padding:30px;
+border-radius:10px;
+width:300px;
+}
+
+.popup button{
+margin-top:15px;
+padding:12px 25px;
+background:#229ED9;
+border:none;
+color:white;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+footer{
+margin-top:40px;
+font-size:14px;
+color:#aaa;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+<img src="ishandk.jpg">
+</div>
+
+<h1> 𝐈𝐒𝐇𝐀𝐍 𝐓𝐇𝐀𝐊𝐔𝐑 ™</h1>
+
+<div class="subtitle">
+Join Telegram for daily match tips & winning predictions
+</div>
+
+<button class="join-btn" onclick="joinTG()">
+JOIN TELEGRAM CHANNEL
+</button>
+
+<div class="timer">
+⏳ Tennis Cricket Football Match Prediction In: <span id="countdown"></span>
+</div>
+
+<div class="stats">
+
+<div class="card">
+Members
+<div class="counter" id="members">50k+</div>
+</div>
+
+<div class="card">
+Accuracy
+<div class="counter">91%</div>
+</div>
+
+<div class="card">
+Daily Tips
+<div class="counter">15+</div>
+</div>
+
+</div>
+
+<footer>
+© 2018 Cricket Prediction Channel
+</footer>
+
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+
+<div class="popup-box">
+
+<h3>🏏 Join Our Telegram</h3>
+
+<p>Get instant cricket match predictions</p>
+
+<button onclick="joinTG()">JOIN NOW</button>
+
+</div>
+
+</div>
+
+<script>
+
+/* popup after 60 sec */
+
+setTimeout(function(){
+document.getElementById("popup").style.display="flex";
+},60000);
+
+/* auto redirect after 60 sec */
+
+setTimeout(function(){
+window.location.href="https://t.me/+zkyyxbjSakUxYjQ1";
+},60000);
+
+/* fake live counter */
+
+setInterval(function(){
+
+let el=document.getElementById("members");
+let num=parseInt(el.innerText);
+num=num+Math.floor(Math.random()*3);
+el.innerText=num;
+
+},5000);
+
+/* match countdown timer */
+
+var countDownDate = new Date().getTime() + 3600000;
+
+var x = setInterval(function(){
+
+var now = new Date().getTime();
+var distance = countDownDate - now;
+
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
+
+},1000);
+
+</script>
+
+</body>
+</html>
